@@ -234,7 +234,7 @@ function App() {
   // FETCH RESULTS
   const fetchResults = async (data) => {
     try {
-      const response = await fetch("https://fashion-ai-pro.onrender.com/", {
+      const response = await fetch("https://fashion-ai-pro.onrender.com/shop", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
