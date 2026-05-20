@@ -212,7 +212,7 @@ function App() {
       }
       
       data.outfits = outfitsArray;
-      addBot(`Looking for: ${outfitsArray.join(", ")}. What's your budget in ₹?`);
+      addBot(`What's your budget in ₹?`);
       setStep(5);
     }
     // BUDGET
