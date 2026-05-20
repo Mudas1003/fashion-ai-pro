@@ -28,12 +28,12 @@ function App() {
 
   // BOT MESSAGE
   const addBot = (text) => {
-    setMessages((prev) => [...prev, { sender: "bot", text, id: Date.now() }]);
+    setMessages((prev) => [...prev, { sender: "bot", text, id: Date.now() + Math.random(), }]);
   };
 
   // USER MESSAGE
   const addUser = (text) => {
-    setMessages((prev) => [...prev, { sender: "user", text, id: Date.now() }]);
+    setMessages((prev) => [...prev, { sender: "user", text, id: Date.now() + Math.random(), }]);
   };
 
   // FORMAT PRICE
@@ -148,7 +148,7 @@ function App() {
       occasion: data.occasion,
       data: res,
       outfits: data.outfits,
-      id: Date.now(),
+     id: Date.now() + Math.random(),
     };
     setMessages((prev) => [...prev, resultComponent]);
   };
@@ -264,7 +264,7 @@ function App() {
       }
 
       const resultBlock = {
-        id: Date.now(),
+        id: Date.now() + Math.random(),
         occasion: data.occasion,
         timestamp: new Date().toLocaleString(),
         date: new Date().toLocaleDateString(),
